@@ -4,6 +4,10 @@ const mongoose = require('mongoose'),
     express = require('express'),
     cors = require('cors'),
     env = require('dotenv').config(),
-    Schema = mongoose.Schema
+    Schema = mongoose.Schema,
+    cron = require("node-cron"),
+    fs = require("fs"),
+    nodemailer = require("nodemailer"),
+    kue = require('kue')
 
-module.exports = { mongoose, bcryptjs, jwt, express, cors, env, Schema }
+module.exports = { mongoose, bcryptjs, jwt, express, cors, env, Schema, cron, fs, nodemailer, kue }

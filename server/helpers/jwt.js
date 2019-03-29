@@ -4,7 +4,7 @@ module.exports = {
     sign(emaiLogin) {
         return jwt.sign({email: emaiLogin}, process.env.SECRET)
     },
-    verify(token) {
+    verifying(token) {
         return jwt.verify(token, process.env.SECRET)
     }
 }
