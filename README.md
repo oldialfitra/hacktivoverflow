@@ -1,6 +1,5 @@
 # hacktivoverflow
 
-# e-commerce
 
 ## Questions Route
 **Note:**  *  *is required*
