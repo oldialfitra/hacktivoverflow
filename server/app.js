@@ -1,6 +1,6 @@
 const { express, cors, mongoose, cron, fs } = require('./helpers/require'),
     app = express(),
-    port = process.env.PORT || 5000,
+    port = process.env.PORT || 80,
     routerUser = require('./routes/user'),
     routerQuestion = require('./routes/question'),
     routerAnswer = require('./routes/answer'),

@@ -37,7 +37,7 @@ export default {
   methods: {
     login(payload) {
       axios
-        .post("http://localhost:5000/users/login", {
+        .post("http://hacktivoverflow.oldialfitra.com/users/login", {
           email: payload[0],
           password: payload[1]
         })
@@ -68,7 +68,7 @@ export default {
     },
     register(payload) {
       axios
-        .post("http://localhost:5000/users/register", {
+        .post("http://hacktivoverflow.oldialfitra.com/users/register", {
           email: payload[0],
           password: payload[1]
         })
@@ -96,7 +96,7 @@ export default {
     addQuestion(payload) {
       axios
         .post(
-          "http://localhost:5000/questions",
+          "http://hacktivoverflow.oldialfitra.com/questions",
           {
             title: payload[0],
             description: payload[1],

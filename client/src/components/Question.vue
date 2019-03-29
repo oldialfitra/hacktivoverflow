@@ -119,7 +119,7 @@ export default {
     upvote(id) {
       axios
         .put(
-          `http://localhost:5000/questions/upvote/${id}`,
+          `http://hacktivoverflow.oldialfitra.com/questions/upvote/${id}`,
           {
             userId: localStorage.getItem("id")
           },
@@ -156,7 +156,7 @@ export default {
     downvote(id) {
       axios
         .put(
-          `http://localhost:5000/questions/downvote/${id}`,
+          `http://hacktivoverflow.oldialfitra.com/questions/downvote/${id}`,
           {
             userId: localStorage.getItem("id")
           },
@@ -199,7 +199,7 @@ export default {
     deleteQuestion(id) {
       console.log("masuk ke delete");
       axios
-        .delete(`http://localhost:5000/questions/${id}`, {
+        .delete(`http://hacktivoverflow.oldialfitra.com/questions/${id}`, {
           headers: {
             token: localStorage.getItem("token")
           }

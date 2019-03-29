@@ -96,7 +96,7 @@ export default {
       addComment() {
         console.log('masuk ke add comment')
           axios
-        .post(`http://localhost:5000/answers/${this.$store.state.question.currentQuestion._id}`, {
+        .post(`http://hacktivoverflow.oldialfitra.com/answers/${this.$store.state.question.currentQuestion._id}`, {
           title: this.title,
           description: this.editorData,
           userId: localStorage.getItem("id")

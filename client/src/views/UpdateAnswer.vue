@@ -96,7 +96,7 @@ export default {
       updateAnswer() {
         console.log('masuk ke update answer')
           axios
-        .put(`http://localhost:5000/answers/${this.$store.state.answer.currentAnswer._id}`, {
+        .put(`http://hacktivoverflow.oldialfitra.com/answers/${this.$store.state.answer.currentAnswer._id}`, {
           title: this.title,
           description: this.editorData
         }, {

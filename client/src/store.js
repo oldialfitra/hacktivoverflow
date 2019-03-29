@@ -41,7 +41,7 @@ export default new Vuex.Store({
   },
   actions: {
     getAll(context) {
-      Axios.get('http://localhost:5000/questions')
+      Axios.get('http://hacktivoverflow.oldialfitra.com/questions')
         .then((response) => {
           context.commit('setAllQuestion', response.data);
           // context.state.question.allQuestions = [];
@@ -60,7 +60,7 @@ export default new Vuex.Store({
       console.log('masuk ke store get one');
       console.log(id)
       Axios
-        .get(`http://localhost:5000/questions/${id}`, {
+        .get(`http://hacktivoverflow.oldialfitra.com/questions/${id}`, {
           headers: {
             token: localStorage.getItem('token'),
           },
@@ -78,7 +78,7 @@ export default new Vuex.Store({
         });
     },
     getOneQuestionUpdate(context, id) {
-      Axios.get(`http://localhost:5000/questions/${id}`, {
+      Axios.get(`http://hacktivoverflow.oldialfitra.com/questions/${id}`, {
         headers: {
           token: localStorage.getItem('token'),
         },
@@ -98,7 +98,7 @@ export default new Vuex.Store({
     getOneAnswer(context, id) {
       console.log(id);
       console.log('masuk ke store update answer')
-      Axios.get(`http://localhost:5000/answers/${id}`, {
+      Axios.get(`http://hacktivoverflow.oldialfitra.com/answers/${id}`, {
         headers: {
           token: localStorage.getItem('token'),
         },

@@ -96,7 +96,7 @@ export default {
       updateQuestion() {
         console.log('masuk ke update post')
           axios
-        .put(`http://localhost:5000/questions/${this.$store.state.question.currentQuestion._id}`, {
+        .put(`http://hacktivoverflow.oldialfitra.com/questions/${this.$store.state.question.currentQuestion._id}`, {
           title: this.title,
           description: this.editorData
         }, {

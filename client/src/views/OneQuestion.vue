@@ -121,7 +121,7 @@ export default {
     upvote(id) {
       axios
         .put(
-          `http://localhost:5000/questions/upvote/${id}`,
+          `http://hacktivoverflow.oldialfitra.com/questions/upvote/${id}`,
           {
             userId: localStorage.getItem("id")
           },
@@ -159,7 +159,7 @@ export default {
     downvote(id) {
       axios
         .put(
-          `http://localhost:5000/questions/downvote/${id}`,
+          `http://hacktivoverflow.oldialfitra.com/questions/downvote/${id}`,
           {
             userId: localStorage.getItem("id")
           },
